@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "1f572b32-92ab-47a3-9df7-8b907e0c2ec4",
+		"name": "RTE Ecowatt",
+		"description": "RTE provides the Ecowatt API to expose the ecowatt signal. This signal is aimed at players in the electricity market and the general public (residents and communities) and aims to alert on three levels of consumption.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signal",
+			"_postman_id": "64f1448f-c6f4-491d-a800-8d463c76859c",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"clientSecret": "91687e74-539d-4959-82ee-e69e5d521c1f",
+						"clientId": "570aef49-ec84-493f-b4b4-5d9fac2ab338",
+						"accessTokenUrl": "https://digital.iservices.rte-france.com/token/oauth/",
+						"grant_type": "client_credentials",
+						"tokenName": "RTE",
+						"useBrowser": false,
+						"addTokenTo": "header"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": "https://digital.iservices.rte-france.com/open_api/ecowatt/v4/signals",
+				"description": "This resource is for exposing the ecowatt signal."
+			},
+			"response": [
+				{
+					"id": "065e50c3-a6e3-4c30-8f0a-316f72bcc536",
+					"name": "Service Unavailable",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "0a6e049e-8286-4267-9fdb-0283785f95bd",
+					"name": "Forbidden",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "456d2521-409c-4881-872e-c342b648fb57",
+					"name": "Request Time-out",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Request Timeout",
+					"code": 408,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "59c82c66-df3d-405e-9d5e-041343f068fd",
+					"name": "Request-URI Too Long",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Request-URI Too Long",
+					"code": 414,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "97174963-bc1e-446b-b896-ddb250310363",
+					"name": "Bandwidth Limit Exceeded",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Bandwidth Limit Exceeded (Apache bw/limited extension)",
+					"code": 509,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "97c3ea94-bfd5-45ad-8095-75f194c7d547",
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "be4e40a5-1b38-4c97-b02b-7738bea861aa",
+					"name": "Too Many Requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Too Many Requests",
+					"code": 429,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "c235a97d-49b5-4204-aeaa-0fb2d13fa924",
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"signals\": [\n    {\n      \"GenerationFichier\": \"1961-12-01T06:15:26.805Z\",\n      \"jour\": \"2010-11-06T16:16:35.640Z\",\n      \"dvalue\": -19753388,\n      \"message\": \"tempor\",\n      \"values\": [\n        {\n          \"pas\": -6990120,\n          \"hValue\": 24629309\n        },\n        {\n          \"pas\": -18021181,\n          \"hValue\": 55264184\n        }\n      ]\n    },\n    {\n      \"GenerationFichier\": \"1950-02-22T11:03:27.246Z\",\n      \"jour\": \"1996-11-08T17:35:32.264Z\",\n      \"dvalue\": -8825917,\n      \"message\": \"pariatur Ut sunt Excepteur\",\n      \"values\": [\n        {\n          \"pas\": 73818337,\n          \"hValue\": -52249238\n        },\n        {\n          \"pas\": 40520543,\n          \"hValue\": -80613515\n        }\n      ]\n    }\n  ]\n}"
+				},
+				{
+					"id": "d0f86c6b-21c6-48a9-bb88-5ae2dda03fb4",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "f1a60b90-312c-4668-bde5-d2ebf5cefd14",
+					"name": "Request Entity Too Large",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Request Entity Too Large",
+					"code": 413,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				},
+				{
+					"id": "feec5696-d616-4805-abfb-b7e676181755",
+					"name": "Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/signals"
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"error\": \"eu Ut deserunt aute in\",\n  \"error_description\": \"in fugiat dolore\",\n  \"error_uri\": \"dolore pariatur esse Duis culpa\",\n  \"error_details\": {\n    \"transaction_id\": \"occaecat dolore fugiat\"\n  }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "e5f9b7fb-f6c9-4899-8602-e257557eda81",
+			"key": "baseUrl",
+			"value": "https://digital.iservices.rte-france.com/open_api/ecowatt/v4",
+			"type": "string"
+		}
+	]
+}
